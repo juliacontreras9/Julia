@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <script>
+        function agregarElemento() {
+            const nuevoElemento = document.createElement("p");
+            nuevoElemento.textContent = "¡Nuevo elemento agregado!";
+            document.body.appendChild(nuevoElemento);
+        }
+
+        function crearTextoMate() {
+            const textoMate = document.createElement("p");
+            textoMate.textContent = "amo el mate";
+            textoMate.style.backgroundColor = "pink";
+            textoMate.style.color = "blue";
+            textoMate.style.padding = "10px";
+            document.body.appendChild(textoMate);
+        }
+
+        function crearTextoPiojosa() {
+            const textoPiojosa = document.createElement("p");
+            textoPiojosa.textContent = "piojosa hasta la muerte";
+            textoPiojosa.style.backgroundColor = "yellow";
+            textoPiojosa.style.color = "red";
+            textoPiojosa.style.padding = "10px";
+            document.body.appendChild(textoPiojosa);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="agregarElemento()">Haz clic aquí</button>
+    <button onclick="crearTextoMate()">Crear texto 'amo el mate'</button>
+    <button onclick="crearTextoPiojosa()">Crear texto 'piojosa hasta la muerte'</button>
+
+    
+</body>
+</html>
